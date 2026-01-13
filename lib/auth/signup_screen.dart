@@ -95,6 +95,8 @@ class _SignUpScreenState extends State<SignUpScreen>
       );
     } else if (appStates is LoadingState) {
       return Stack(children: [getMainView(), const CustomLoading()]);
+    }else{
+      return getMainView();
     }
   }
 

@@ -76,6 +76,8 @@ class _LoginScreenState extends State<LoginScreen>
       );
     } else if (appStates is LoadingState) {
       return Stack(children: [getMainView(), const CustomLoading()]);
+    }else{
+      return getMainView();
     }
   }
 
